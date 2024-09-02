@@ -64,7 +64,7 @@ const ContactSection = () => (
 );
 
 const OverallExperienceSection = () => (
-  <div className="py-20 bg-gray-50">
+  <div className="py-20 lg:px-20 bg-gray-50">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-600">Overall Experience</h2>
       <div className="bg-white rounded-lg shadow-lg p-8">
@@ -90,7 +90,7 @@ const OverallExperienceSection = () => (
 );
 
 const SkillsSection = () => (
-  <div className="bg-gray-100 py-20">
+  <div className="bg-gray-100 py-20 lg:px-20">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-600">Skills & Expertise</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -114,7 +114,7 @@ const SkillsSection = () => (
 );
 
 const ExperienceSection = () => (
-  <div className="py-20">
+  <div className="py-20 lg:px-20">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-600">Professional Experience</h2>
       <div className="space-y-12">
@@ -166,7 +166,7 @@ const ExperienceSection = () => (
 );
 
 const ProjectsSection = () => (
-  <div className="bg-gray-100 py-20">
+  <div className="bg-gray-100 py-20 lg:px-20">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-600">Featured Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -215,7 +215,7 @@ const ProjectsSection = () => (
 );
 
 const EducationSection = () => (
-  <div className="py-20">
+  <div className="py-20 lg:px-20">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-600">Education</h2>
       <div className="bg-white rounded-lg shadow-md p-6">
@@ -229,7 +229,7 @@ const EducationSection = () => (
 );
 
 const CertificationsSection = () => (
-  <div className="bg-gray-100 py-20">
+  <div className="bg-gray-100 py-20 lg:px-20">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-600">Certifications</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
