@@ -59,4 +59,4 @@ For more information, please contact Nithin I Bhandari:
 - Phone: (91) 8073436659
 - LinkedIn: [https://www.linkedin.com/in/nithinibhandari1999](https://www.linkedin.com/in/nithinibhandari1999)
 - GitHub: [https://github.com/NithinIBhandari1999/](https://github.com/NithinIBhandari1999/)
-- Portfolio: [https://nithinibhandari.com](https://nithin.xyz)
+- Portfolio: [https://nithin.xyz](https://nithin.xyz)
