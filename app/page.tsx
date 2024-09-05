@@ -175,20 +175,24 @@ const ProjectsSection = () => (
             title: "Local Shop Search",
             description: "A web application for finding products in nearby shops, built with React, Express, MongoDB, and Leaflet JS.",
             image: "/projects/localshopsearch_search.png",
-            link: "https://local-shop-search.netlify.app/search/",
-            github: "https://github.com/NithinIBhandari1999/localshopsearch_client"
+            liveDemoLink: "https://local-shop-search.netlify.app/search/",
+            github: "https://github.com/NithinIBhandari1999/localshopsearch_client",
+            moreInfo: "/project/localshopsearch"
           },
           {
             title: "City Classified Ads",
             description: "A platform for posting and searching classified ads in cities.",
             image: "/projects/city_classified_ads_homepage_crop.png",
-            link: "/project/city_classified_ads_by_mern_stack/"
+            github: "https://github.com/NithinIBhandari1999/city-classified-ads",
+            moreInfo: "/project/city_classified_ads_by_mern_stack"
           },
           {
             title: "Password Manager Offline",
             description: "A secure, offline password manager application.",
             image: "/projects/PasswordManagerOffline.png",
-            link: "https://nibpasswordmanager.netlify.app/"
+            github: "https://github.com/NithinIBhandari1999/NibPasswordManager",
+            liveDemoLink: "https://nibpasswordmanager.netlify.app/",
+            moreInfo: "/project/password_manager_offline"
           }
         ].map((project, index) => (
           <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-500">
@@ -197,14 +201,19 @@ const ProjectsSection = () => (
               <h3 className="text-xl font-bold mb-2 text-blue-600">{project.title}</h3>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <div className="flex space-x-2">
-                <a className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" href={project.link} target="_blank" rel="noopener noreferrer">
-                  Live Demo
-                </a>
+                {project.liveDemoLink && (
+                  <a className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+                )}
                 {project.github && (
                   <a className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-full transition duration-300" href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="inline mr-2" size={16} /> GitHub
                   </a>
                 )}
+                <a className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" href={project.moreInfo}>
+                  More Info
+                </a>
               </div>
             </div>
           </div>
