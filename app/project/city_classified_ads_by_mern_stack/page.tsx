@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Footer from '@/srcCustom/components/Footer';
 
 const CityClassifiedAds = () => {
     return (
@@ -11,7 +12,6 @@ const CityClassifiedAds = () => {
                 <meta name="author" content="Nithin I Bhandari" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                 <title>City Classified Ads By MERN Stack | Nithin I Bhandari</title>
-                <link rel="stylesheet" href="/style/style.css" />
             </Head>
 
             <nav className="bg-gray-100 p-2 shadow-md fixed top-0 w-full">
@@ -58,11 +58,7 @@ const CityClassifiedAds = () => {
                 </div>
             </div>
 
-            <footer className="mt-16 bg-gray-100 p-4 shadow-md">
-                <div className="container mx-auto">
-                    <h6 className="text-center font-bold text-gray-700">Nithin © {new Date().getFullYear()}</h6>
-                </div>
-            </footer>
+            <Footer />
 
             <script src="https://webreader.naturalreaders.com/nr-webreader.js" defer></script>
             <script dangerouslySetInnerHTML={{
