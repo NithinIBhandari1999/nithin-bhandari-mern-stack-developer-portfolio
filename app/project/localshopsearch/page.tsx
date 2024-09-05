@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-
 import Footer from '@/srcCustom/components/Footer';
 
 const LocalShopSearch = () => {
@@ -15,35 +14,35 @@ const LocalShopSearch = () => {
                 <title>Local Shop Search By MERN Stack | Nithin I Bhandari</title>
             </Head>
 
-            <nav className="bg-gray-100 p-2 shadow-md fixed top-0 w-full">
+            <nav className="bg-[#2561e8] p-3 shadow-lg fixed top-0 w-full">
                 <div className="container mx-auto text-center">
-                    <a className="font-bold text-gray-800 hover:text-gray-600 transition duration-300" href="/">Nithin I Bhandari</a>
+                    <a className="font-bold text-white hover:text-gray-200 transition duration-300 text-xl" href="/">Nithin I Bhandari</a>
                 </div>
             </nav>
 
-            <div className="container mx-auto py-16 px-4 max-w-2xl">
-                <h4 className="text-2xl font-bold mb-6 mt-16">Local Shop Search By MERN Stack</h4>
+            <div className="container mx-auto py-20 px-4 max-w-3xl">
+                <h4 className="text-3xl font-bold mb-8 mt-16 text-[#2561e8]">Local Shop Search By MERN Stack</h4>
 
-                <p className="mt-4 text-gray-700 leading-relaxed">
+                <p className="mt-6 text-gray-700 leading-relaxed text-lg">
                     Hi, I have created a project using the MERN Stack.<br />
                     Local Shop Search allows you to find shops near you using an interactive map.<br />
                     Shop owners can add their shops and list their products.<br />
                     End-users can search for products and visit shops to make purchases.<br /><br />
 
-                    <a href="https://local-shop-search.netlify.app/search/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition duration-300">
+                    <a href="https://local-shop-search.netlify.app/search/" target="_blank" rel="noopener noreferrer" className="bg-[#2561e8] hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full mr-4 transition duration-300 inline-block">
                         Visit Website
                     </a>
-                    <a href="https://github.com/NithinIBhandari1999/localshopsearch_client" target="_blank" rel="noopener noreferrer" className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                    <a href="https://github.com/NithinIBhandari1999/localshopsearch_client" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">
                         View Source Code
                     </a>
                 </p>
 
-                <h5 className="text-xl font-semibold mt-8 mb-4">Screenshot:</h5>
-                <div className="mt-3 max-w-2xl mx-auto">
+                <h5 className="text-2xl font-semibold mt-12 mb-6 text-[#2561e8]">Screenshot:</h5>
+                <div className="mt-4 max-w-3xl mx-auto">
                     <img
                         src="/project/localshopsearch/image/localshopsearch_search.png"
                         alt="Homepage image | Local Shop Search"
-                        className="w-full h-auto border border-gray-300 rounded-lg shadow-lg"
+                        className="w-full h-auto border-4 border-[#2561e8] rounded-xl shadow-2xl hover:shadow-3xl transition duration-300"
                     />
                 </div>
             </div>
