@@ -116,10 +116,10 @@ const SkillsSection = () => (
 );
 
 const ExperienceSection = () => (
-  <div className="py-20 lg:px-20">
-    <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-600">Professional Experience</h2>
-      <div className="space-y-12">
+  <div className="py-12 lg:py-20 px-4 lg:px-20">
+    <div className="container mx-auto">
+      <h2 className="text-3xl lg:text-4xl font-extrabold text-center mb-8 lg:mb-12 text-blue-600">Professional Experience</h2>
+      <div className="space-y-8 lg:space-y-12">
         {[
           {
             company: "Ripple Mind Private Limited",
@@ -148,13 +148,13 @@ const ExperienceSection = () => (
           }
         ].map((job, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-blue-600 text-white p-6">
-              <h3 className="text-2xl font-bold">{job.company}</h3>
-              <p className="text-lg">{job.role}</p>
+            <div className="bg-blue-600 text-white p-4 lg:p-6">
+              <h3 className="text-xl lg:text-2xl font-bold">{job.company}</h3>
+              <p className="text-base lg:text-lg">{job.role}</p>
             </div>
-            <div className="p-6">
-              <p className="text-gray-600 mb-4">{job.period}</p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <div className="p-4 lg:p-6">
+              <p className="text-sm lg:text-base text-gray-600 mb-3 lg:mb-4">{job.period}</p>
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 space-y-1 lg:space-y-2">
                 {job.achievements.map((achievement, i) => (
                   <li key={i}>{achievement}</li>
                 ))}
@@ -201,8 +201,10 @@ const ProjectsSection = () => (
             <img className="w-full h-48 object-cover" src={project.image} alt={project.title} />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2 text-blue-600">{project.title}</h3>
-              <p className="text-gray-700 mb-4">{project.description}</p>
-              <div className="flex space-x-2">
+              <p
+                className="text-gray-700 mb-2 lg:min-h-[80px]"
+              >{project.description}</p>
+              <div className="flex flex-wrap gap-2">
                 {project.liveDemoLink && (
                   <a className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">
                     Live Demo
